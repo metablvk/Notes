@@ -9,7 +9,7 @@ const Header: FC = () => {
     setMenuState(!menuState);
   };
   return (
-    <header>
+    <header className={`sticky top-0 ${styles.navbar_header}`}>
       <nav
         className={`${styles.navbar} py-8 px-8 max-w-6xl mx-auto`}
         onClick={handleClick}

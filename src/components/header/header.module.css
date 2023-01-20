@@ -1,3 +1,8 @@
+.navbar_header {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
 .navbar {
   display: flex;
 }
@@ -17,10 +22,11 @@
 }
 
 .navbar_menu {
-  position: absolute;
-  top: 5rem;
+  position: fixed;
+  top: 5.8rem;
   left: 0;
   max-width: 0;
+
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.71);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -31,7 +37,7 @@
   border-right: 0.1rem solid #ccc;
   padding-top: 2rem;
   overflow: hidden;
-  height: calc(100% - 5rem);
+  height: 100%;
   transition: 0.1s;
 }
 

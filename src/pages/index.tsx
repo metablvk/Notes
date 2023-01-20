@@ -31,6 +31,23 @@ const Home: NextPage<Props> = ({ posts }: Props) => {
               <p>{post.description}</p>
             </div>
           ))}
+        {posts
+          .filter((post) => post.category === 'HTML')
+          .map((post) => (
+            <div key={post.slug} className={`mb-6 ${styles.post}`}>
+              <div className='mb-4'>
+                <Thumbnail
+                  slug={post.slug}
+                  title={post.title}
+                  src={post.thumbnail}
+                />
+              </div>
+              <h2 className='text-2xl mb-2 font-normal'>
+                <Link href={`/posts/${post.slug}`}>{post.title}</Link>
+              </h2>
+              <p>{post.description}</p>
+            </div>
+          ))}
       </div>
     </div>
   );
