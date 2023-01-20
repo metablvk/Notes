@@ -1,0 +1,30 @@
+.posts_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.post {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .post {
+    width: calc(50% - 1rem);
+    margin-right: 1rem;
+  }
+
+  .post:last-of-type {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .post {
+    width: calc(33.33333% - 1rem);
+    margin-right: 1rem;
+  }
+
+  .post:last-of-type {
+    margin-right: 0;
+  }
+}

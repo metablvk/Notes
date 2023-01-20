@@ -1,6 +1,16 @@
-import '@/styles/globals.css'
-import type { AppProps } from 'next/app'
+import type { AppProps } from 'next/app';
+import Layout from '../components/layout/layout.component';
+import './../styles/globals.css';
+import { MdxComponentsProvider } from '../context/mdx.context';
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+function MyApp({ Component, pageProps }: AppProps) {
+  return (
+    <MdxComponentsProvider>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </MdxComponentsProvider>
+  );
 }
+
+export default MyApp;

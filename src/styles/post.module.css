@@ -1,0 +1,26 @@
+.feature_img {
+  width: 100%;
+  height: 25rem;
+}
+
+.mdx_content p {
+  margin-bottom: 1.5rem;
+}
+
+.mdx_content h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.mdx_content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.mdx_content code {
+  background: #ccc;
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+}

@@ -1,0 +1,79 @@
+.navbar {
+  display: flex;
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.hamburger span {
+  background-color: rgb(161 161 170);
+  display: block;
+  width: 2.2rem;
+  height: 0.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.navbar_menu {
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  max-width: 0;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.71);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 0.1rem solid #ccc;
+  border-right: 0.1rem solid #ccc;
+  padding-top: 2rem;
+  overflow: hidden;
+  height: calc(100% - 5rem);
+  transition: 0.1s;
+}
+
+.show_menu {
+  width: 40%;
+  max-width: 20rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.navbar_menu li {
+  text-align: right;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 1152px) {
+  .navbar {
+    align-items: center;
+    justify-content: space-between;
+  }
+  .hamburger {
+    display: none;
+  }
+  .show_menu {
+    max-width: initial;
+    padding-left: initial;
+    padding-right: initial;
+  }
+  .navbar_menu {
+    width: initial;
+    border: none;
+    background: initial;
+    position: initial;
+    display: flex;
+    padding-top: initial;
+    max-width: initial;
+  }
+  .navbar_menu li {
+    margin-bottom: 0;
+    margin-right: 1.2rem;
+  }
+  .navbar_menu a {
+    color: initial;
+  }
+}
