@@ -11,7 +11,7 @@ const Header: FC = () => {
   return (
     <header className={`sticky top-0 ${styles.navbar_header}`}>
       <nav
-        className={`${styles.navbar} py-8 px-8 max-w-6xl mx-auto`}
+        className={`${styles.navbar} py-6 px-6 max-w-6xl mx-auto`}
         onClick={handleClick}
       >
         <div className={styles.hamburger}>
