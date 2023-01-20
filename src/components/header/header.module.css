@@ -71,6 +71,10 @@
     padding-right: initial;
   }
   .navbar_menu {
+    background: initial;
+    box-shadow: initial;
+    backdrop-filter: initial;
+    -webkit-backdrop-filter: initial;
     width: initial;
     border: none;
     background: initial;
